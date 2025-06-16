@@ -234,12 +234,6 @@ print(f"Landing Success Probability: {prediction:.2%}")
    - API endpoint creation
    - Cloud platform integration
 
-## 📞 Contact
-
-**Project Author**: Debanjan Shil
-- LinkedIn: https://www.linkedin.com/in/debanjan06
-- Email: debanjanshil66@gmail.com
-
 ## 🙏 Acknowledgments
 
 - **IBM Developer Skills Network** for the project framework
