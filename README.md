@@ -148,7 +148,7 @@ spacex-launch-prediction/
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/spacex-launch-prediction.git
+git clone https://github.com/debanjan06/spacex-launch-prediction.git
 cd spacex-launch-prediction
 ```
 
