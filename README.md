@@ -143,62 +143,6 @@ spacex-launch-prediction/
 ├── README.md
 └── LICENSE
 ```
-
-## ⚙️ Installation & Setup
-
-1. **Clone the repository**:
-```bash
-git clone https://github.com/debanjan06/spacex-launch-prediction.git
-cd spacex-launch-prediction
-```
-
-2. **Create virtual environment**:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**:
-```bash
-pip install -r requirements.txt
-```
-
-4. **Launch Jupyter Notebook**:
-```bash
-jupyter notebook
-```
-
-## 🚀 Usage
-
-### Running the Complete Pipeline
-
-1. **Data Collection**: Start with `01-data-collection-api.ipynb`
-2. **Data Processing**: Continue through notebooks sequentially
-3. **Model Training**: Execute `08-machine-learning-prediction.ipynb`
-4. **Interactive Dashboard**: Run `07-plotly-dash-dashboard.ipynb`
-
-### Quick Start - Prediction Model
-
-```python
-from src.models.predict_model import SpaceXPredictor
-
-# Initialize predictor
-predictor = SpaceXPredictor()
-
-# Load trained model
-predictor.load_model('models/best_model.pkl')
-
-# Make prediction
-prediction = predictor.predict({
-    'payload_mass': 5000,
-    'orbit_type': 'LEO',
-    'launch_site': 'KSC LC-39A',
-    'booster_version': 'F9 v1.1'
-})
-
-print(f"Landing Success Probability: {prediction:.2%}")
-```
-
 ## 📈 Results
 
 ### Model Performance
@@ -216,27 +160,7 @@ print(f"Landing Success Probability: {prediction:.2%}")
 - Temporal trend analysis showing improvement over time
 - Payload vs. success rate correlation analysis
 - Comprehensive dashboard for stakeholder presentations
-
-## 🔮 Future Improvements
-
-1. **Enhanced Features**:
-   - Weather data integration
-   - Real-time telemetry analysis
-   - Advanced trajectory modeling
-
-2. **Model Enhancements**:
-   - Deep learning implementation
-   - Ensemble methods
-   - Real-time prediction capabilities
-
-3. **Deployment**:
-   - Web application development
-   - API endpoint creation
-   - Cloud platform integration
-
+- 
 ## 🙏 Acknowledgments
 
 - **IBM Developer Skills Network** for the project framework
-- **SpaceX** for providing public API access
-- **NASA** for additional technical resources
-- **Open Source Community** for the excellent libraries and tools
